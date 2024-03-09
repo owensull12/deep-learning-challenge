@@ -15,6 +15,6 @@ The goal of this project is to predict whether applicants will be funded by "Alp
 I used the plot_keras_history package to quickly plot ten iterations of a ten-epoch training session. The basic model appears on the left, and the optimized model is on the right.
 
 
-![basic accuracy](https://github.com/owensull12/deep-learning-challenge/assets/143757565/d87df223-7472-42f2-a31e-045606b0205f) ![optimized accuracy](https://github.com/owensull12/deep-learning-challenge/assets/143757565/888a57b4-4b03-4a6c-b5fa-b2ae9bee0b20)
+![basic accuracy](https://github.com/owensull12/deep-learning-challenge/assets/143757565/d87df223-7472-42f2-a31e-045606b0205f)![optimized accuracy](https://github.com/owensull12/deep-learning-challenge/assets/143757565/888a57b4-4b03-4a6c-b5fa-b2ae9bee0b20)
 
-![basic loss](https://github.com/owensull12/deep-learning-challenge/assets/143757565/dcef6708-23b2-47cb-808e-460bb189bc9f) ![optimized loss](https://github.com/owensull12/deep-learning-challenge/assets/143757565/e3320adb-125f-4c3d-b969-e2d2efa45a8f)
+![basic loss](https://github.com/owensull12/deep-learning-challenge/assets/143757565/dcef6708-23b2-47cb-808e-460bb189bc9f)![optimized loss](https://github.com/owensull12/deep-learning-challenge/assets/143757565/e3320adb-125f-4c3d-b969-e2d2efa45a8f)
