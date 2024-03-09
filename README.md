@@ -12,9 +12,14 @@ The goal of this project is to predict whether applicants will be funded by "Alp
 - Given that the output is a simple yes/no, I chose sigmoid as the final activation function. Each of the hidden layers use relu, which proved to be most effective after testing several other functions. Binary Focal Crossentropy was also tested for the loss function. It exchanged a massive drop in loss for a small drop in accuracy, so I decided to stick with Binary Crossentropy.
 - Evaluating each model with the testing data shows an 11% decrease in loss and a 6% increase in accuracy when switching to the optimized model. Surprisingly, no extra time is required when testing the optimized model.
 
-I used the plot_keras_history package to quickly plot ten iterations of a ten-epoch training session. The basic model appears on the left, and the optimized model is on the right.
+I used the plot_keras_history package to quickly plot ten iterations of a ten-epoch training session. The basic model appears first, followed by the optimized model.
 
-
+### Accuracy
 ![basic accuracy](https://github.com/owensull12/deep-learning-challenge/assets/143757565/d87df223-7472-42f2-a31e-045606b0205f)![optimized accuracy](https://github.com/owensull12/deep-learning-challenge/assets/143757565/888a57b4-4b03-4a6c-b5fa-b2ae9bee0b20)
 
+### Loss
+The darkest line is an average of all ten epochs. The shaded section covers one standard deviation.
 ![basic loss](https://github.com/owensull12/deep-learning-challenge/assets/143757565/dcef6708-23b2-47cb-808e-460bb189bc9f)![optimized loss](https://github.com/owensull12/deep-learning-challenge/assets/143757565/e3320adb-125f-4c3d-b969-e2d2efa45a8f)
+
+## Final Thoughts
+The initial deep learning model boasts a promising 74% accuracy rate in training. After fine tuning the process, the optimized model kicks accuracy up to 80% at no cost to computational power. However, 80% is far from perfect. Other models might capture this dataset more efficiently, such as the Random Forest model. Random Forest would likely perform well with the large groupings found in many columns - for example, the 1260 instances of Parent Booster USA INC in the 'NAME' column, or the 27037 instances of the 'T3' Application Type. While the Random Forest method might draw more resources, they are great at binary classification and would be a great next step for exploring this dataset.
